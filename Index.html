@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My_Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="Style/MyPortfolio.css">
+	<link rel="stylesheet" href="css-circle/css/circle.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+</head>
+<body>
+	<div class="row">
+		<div class="col-xs-4">
+			<div class="w3-sidebar w3-bar-block w3-animate-left" style="display:none;z-index:5" id="mySidebar">
+				<button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+				<img id="profileme" src="IMG/me.jpg" class="img-circle" alt="John Damascene's image" width="160" height="160">
+				<h5><span class="label label-default">Name</span></h5>
+				<h4>John Damacene</h4>
+				<br> 
+				<h5><span class="label label-default">Class</span></h5>
+				<h4>CHARLIE</h4>
+				<br>
+				<h5><span class="label label-default">Instructor</span></h5>
+				<h4><span class="badge">Sir</span> Ephraim</h4>
+
+				<br><br><br>
+				<a href="#MyProjects" class="btn btn-success" ><span class="badge">My</span>Projects</a>
+				<br><br><br>
+				<a href="https://facebook.com/'John Damascene'" target="_new"><i class="fa fa-facebook"></i></a>
+				<a href="https://instagram.com/damascenejohn" target="_new"><i class="fa fa-intagram"></i></a>
+				<a href="https://twitter.com/johdamoch" target="_new"><i class="fa fa-twitter"></i></a>
+				<a href="https://linkedin.com/'John Damascene'" target="_new"><i class="fa fa-linkedin"></i></a>
+				<a href="https://github.com/JDamascene" target="_new"><i class="fa fa-github"></i></a>
+				
+			</div>
+			<!-- Page Content -->
+			<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+			<div>
+				<button class="w3-button w3-xxlarge" onclick="w3_open()" id="upButton" >&#9776;</button>
+			</div>
+		</div>
+		<div class="col-xs-8">
+			<nav class="navbar">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="glyphicon glyphicon-tasks"></span>
+						</button>
+						<a href="#"><h4>The Code Solver <span id="loggo" class="badge">Johdamoch</span></button></h4></a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> </a></li>
+
+							<li><a href="#Aboutme">About|Me</a></li>
+							<li><a href="#Contacts">Contacts</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div class="container">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+				<li data-target="#myCarousel" data-slide-to="4"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<div class="jumbotron1" id="slide1">
+						<h1>Web Developement</h1>
+						<div class="clearfix" id="progress">
+							<div class="c100 p80 blue">
+								<span>80%</span>
+								<div class="slice">
+									<div class="bar"></div>
+									<div class="fill"></div>
+								</div>
+							</div>
+						</div><!-- /.dark-area -->
+					</div>
+				</div>
+				<div class="item">
+					<div class="jumbotron1" id="slide2">
+						<h1>Java</h1>
+						<div class="clearfix" id="progress">
+							<div class="c100 p1 orange">
+								<span>0%</span>
+								<div class="slice">
+									<div class="bar"></div>
+									<div class="fill"></div>
+								</div>
+							</div>
+						</div><!-- /.dark-area -->
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="jumbotron1" id="slide3">
+						<h1>Mobile Business</h1>
+						<div class="row">
+							<div class="col-xs-6">
+								<div class="clearfix" id="progress">
+									<div class="c100 p100 green">
+										<span>100%</span>
+										<div class="slice">
+											<div class="bar"></div>
+											<div class="fill"></div>
+										</div>
+									</div>
+								</div><!-- /.dark-area -->
+								<p>Mobile business 1</p>
+							</div>
+							<div class="col-xs-6">
+								<div class="clearfix" id="progress">
+									<div class="c100 p1 orange">
+										<span>0%</span>
+										<div class="slice">
+											<div class="bar"></div>
+											<div class="fill"></div>
+										</div>
+									</div>
+								</div><!-- /.dark-area -->
+								<p>Mobile business 2</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="jumbotron1" id="slide4">
+						<h1>Agile Methodology</h1>
+						<div class="row">
+							<div class="col-xs-6">
+								<div class="clearfix" id="progress">
+									<div class="c100 p1 orange">
+										<span>0%</span>
+										<div class="slice">
+											<div class="bar"></div>
+											<div class="fill"></div>
+										</div>
+									</div>
+								</div><!-- /.dark-area -->
+								<p>Agile Methodology 1</p>
+							</div>
+							<div class="col-xs-6">
+								<div class="clearfix" id="progress">
+									<div class="c100 p1 orange">
+										<span>0%</span>
+										<div class="slice">
+											<div class="bar"></div>
+											<div class="fill"></div>
+										</div>
+									</div>
+								</div><!-- /.dark-area -->
+								<p>Agile Methodology 2</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="jumbotron1" id="slide5">
+						<h1>Android</h1>
+						<div class="clearfix" id="progress">
+							<div class="c100 p1 orange">
+								<span>0%</span>
+								<div class="slice">
+									<div class="bar"></div>
+									<div class="fill"></div>
+								</div>
+							</div>
+						</div><!-- /.dark-area -->
+					</div>
+				</div>
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div><br><br><br>
+
+	<div class="container">
+		<div class="jumbotron-About">
+			<h2 class="Aboutme">About|<small>Me</small><a name="Aboutme"></a> </h2>
+			<p class="Aboutme">I am a tech savy individual in a quest to learn codding and content developement for the growing technology. I'm currently undergoin an MIT course at <a href="#">E-mobilis</a> for a four months period and which are aimed at equipping us with the skills <a href="#">listed</a>.
+			</p>
+			<button class="btn btn-info" data-toggle="collapse" data-target="#aboutMe">See More</button>
+
+			<div id="aboutMe" class="collapse Aboutme">
+				I joined E-mobilis in January 5<sup>th</sup> 2018 with an invite just from high school. The course takes a duration of three n  half months but I also add on the little I learn.
+				I enjoy reding extensively and doing alot of prctice so as to become a mter at my art.
+				I enjoy combining programming with artistic designs for not only standing out but also to produce astheticly pleasing mater pieces.
+			</div>
+		</div>
+	</div><br><br>
+	<div class="container text-center">
+		<div class="jumbotron2"  id="projects">
+			<a name="MyProjects"><span class="badge">My</span>Projects</a>
+			<div class="row">
+				<div class="col-md-6">
+					<h4>Cat 1</h4>
+					<img src="IMG/Cat1.png"><br><br>
+					<a href="https://github.com/JDamascene/Assignment.git" target="_new"><i id="gitt" class="fa fa-github"></i>Link</a>
+				</div>
+				<div class="col-md-6">
+					<h4>Grid</h4>
+					<img src="IMG/Gridd.png"><br><br>
+					<a href="https://github.com/JDamascene/Assignment.git" target="_new"><i id="gitt" class="fa fa-github"></i>Link</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br><br><br>
+	<div class="container">
+		<div class="jumbotron3 text-center">
+			<h4><a class="no-line" name="Contacts">Contact <span class="label label-default">Me</span></a></h4>
+			<div class="row">
+				<div class="col-md-6">
+					<h5><i class="fa fa-phone"></i> phone: +254771425767</h5>
+					<h5><i class="fa fa-envelope"></i> Email: johdamoch@gmail.com</h5>
+				</div>
+				<div class="col-md-6">
+					<h4>Send me an E-mail</h4>
+					<form>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Email address</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">Password</label>
+							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+							<label class="form-check-label" for="exampleCheck1">Check me out</label>
+						</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br><br><br>
+	<div class="container">
+		<div class="footer">
+			<a href="https://facebook.com/'John Damascene'" target="_new"><i class="fa fa-facebook"></i></a>
+			<a href="https://instagram.com/damascenejohn" target="_new"><i class="fa fa-intagram"></i></a>
+			<a href="https://twitter.com/johdamoch" target="_new"><i class="fa fa-twitter"></i></a>
+			<a href="https://linkedin.com/'John Damascene'" target="_new"><i class="fa fa-linkedin"></i></a>
+			<a href="https://github.com/JDamascene" target="_new"><i class="fa fa-github"></i></a>
+			<br>
+			<p><i class="fa fa-cog fa-copyright"></i>John Damacene 2018</p>
+		</div>
+	</div>
+	<script>
+		function w3_open() {
+			document.getElementById("mySidebar").style.display = "block";
+			document.getElementById("myOverlay").style.display = "block";
+		}
+		function w3_close() {
+			document.getElementById("mySidebar").style.display = "none";
+			document.getElementById("myOverlay").style.display = "none";
+		}
+	</script>
+	<!--Js & Jquery links-->
+	<script src="js/Jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>
+
+
+
+
